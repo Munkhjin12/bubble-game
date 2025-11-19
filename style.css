@@ -1,31 +1,35 @@
-/* Нийт дэлгэцийн фон */
 body {
     margin: 0;
-    background: #e0e0f5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
+    background: #dde0f5;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Тоглоомын талбай */
+/* Canvas буюу тоглоомын талбай */
 #myCanvas {
-    margin-top: 40px;
     background: #000066;
     border: 4px solid #ffffff;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-/* Game Over панел */
+/* Game Over panel – эхлээд нуусан */
 #gameOverPanel {
-    display: none;
-    margin-top: 15px;
-    text-align: center;
+    position: fixed;
+    inset: 0;
+    display: none;              /* ← ҮНДСЭН НУУГДСАН БАЙДАЛ */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
-#gameOverPanel h2,
-#gameOverPanel p {
-    color: white;
+#gameOverPanel h1 {
+    margin-bottom: 10px;
 }
 
 #restartBtn {
