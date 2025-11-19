@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Game</title>
+
+    <!-- Тусдаа stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <canvas id="myCanvas" width="800" height="400"></canvas>
+
+    <audio id="popSound" src="pop.wav" preload="auto"></audio>
+
+    <div id="gameOverPanel">
+        <h2>Тоглоом дууслаа!</h2>
+        <p id="finalScoreText"></p>
+        <button id="restartBtn">Шинээр эхлэх</button>
+    </div>
+
+    <!-- Гол script -->
+    <script src="js/script.js">
+     if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+    </script>
+</body>
+</html>
